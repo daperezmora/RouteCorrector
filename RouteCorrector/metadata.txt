@@ -3,11 +3,11 @@ name=RouteCorrector
 qgisMinimumVersion=3.22
 qgisMaximumVersion=3.99
 version=0.1.0
-author=Daniel Perez
+author=Ana Laura Jimenez Chavez et al.
 author_email=daniel.perez@ibero.mx
 about=Corrects GPS drift and anchors routes to road network/OSM for air-quality mobile monitoring.
 tracker=https://github.com/daperezmora/RouteCorrector/issues
-repository=https://plugins.qgis.org/plugins/RouteCorrector/
+repository=https://github.com/daperezmora/RouteCorrector
 homepage=https://github.com/daperezmora/RouteCorrector
 changelog=See CHANGELOG.md
 category=Plugins
@@ -18,16 +18,21 @@ deprecated=False
 tags=air quality;geolocation;gps drift;qgis;osm
 
 [about]
+**RouteCorrector** is a QGIS plugin that corrects GPS drift in mobile air-quality monitoring tracks by enabling users to define and manage anchor points, reorder them by timestamp, and snap corrected routes to the road network (e.g., OpenStreetMap).  
 
-**Authors and Contributions:**
-- **Ana Laura Jimenez Chavez¹** – Lead developer; designed and implemented the plugin, maintained source code, and prepared the public release.
-- **Francisco Esquembre Martinez²** – Conceptualization; proposed the core idea and provided algorithmic and development guidance.
-- **Daniel Alejandro Pérez de la Mora¹** – User experience design; contributed feedback on interface usability and serves as corresponding author.
-- **Antonia Baeza Caracena³** – Validation; contributed domain-specific feedback and critical review of functionality.
+### Authors and Contributions
+- **Ana Laura Jimenez Chavez¹** – Lead developer; designed and implemented the plugin, maintained source code, and prepared the public release.  
+- **Francisco Esquembre Martinez²** – Conceptualization; proposed the core idea and provided algorithmic and development guidance.  
+- **Daniel Alejandro Pérez de la Mora¹** – User experience design; contributed feedback on interface usability and serves as corresponding author.  
+- **Antonia Baeza Caracena³** – Validation; contributed domain-specific feedback and critical review of functionality.  
 
-**Affiliations:**  
+### Affiliations
 1. Instituto de Investigación Aplicada y Tecnología, Universidad Iberoamericana, 01219 Mexico City, Mexico  
 2. Department of Mathematics, Faculty of Mathematics, Campus de Espinardo, University of Murcia, 30100 Murcia, Spain  
 3. Department of Chemical Engineering, Faculty of Chemistry, Campus de Espinardo, University of Murcia, 30100 Murcia, Spain  
 
-RouteCorrector helps correct mobile GPS tracks by setting and reordering anchor points, snapping to OSM, and exporting corrected routes for micro-scale exposure analysis.
+### Citation
+If you use RouteCorrector in academic work, please cite it as:  
+
+Jimenez Chavez, A. L., Esquembre Martinez, F., Pérez de la Mora, D. A., & Baeza Caracena, A. (2025). *RouteCorrector (QGIS plugin)* [Computer software]. Universidad Iberoamericana & University of Murcia. https://github.com/daperezmora/RouteCorrector
+
