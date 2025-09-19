@@ -18,4 +18,16 @@ deprecated=False
 tags=air quality;geolocation;gps drift;qgis;osm
 
 [about]
+
+**Authors and Contributions:**
+- **Ana Laura Jimenez Chavez¹** – Lead developer; designed and implemented the plugin, maintained source code, and prepared the public release.
+- **Francisco Esquembre Martinez²** – Conceptualization; proposed the core idea and provided algorithmic and development guidance.
+- **Daniel Alejandro Pérez de la Mora¹** – User experience design; contributed feedback on interface usability and serves as corresponding author.
+- **Antonia Baeza Caracena³** – Validation; contributed domain-specific feedback and critical review of functionality.
+
+**Affiliations:**  
+1. Instituto de Investigación Aplicada y Tecnología, Universidad Iberoamericana, 01219 Mexico City, Mexico  
+2. Department of Mathematics, Faculty of Mathematics, Campus de Espinardo, University of Murcia, 30100 Murcia, Spain  
+3. Department of Chemical Engineering, Faculty of Chemistry, Campus de Espinardo, University of Murcia, 30100 Murcia, Spain  
+
 RouteCorrector helps correct mobile GPS tracks by setting and reordering anchor points, snapping to OSM, and exporting corrected routes for micro-scale exposure analysis.
