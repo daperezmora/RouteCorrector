@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/routecorrector">
+    <file>icon.png</file>
+    <file>forms/main_dialog.ui</file>
+  </qresource>
+</RCC>

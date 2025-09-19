@@ -1,0 +1,21 @@
+[general]
+name=RouteCorrector
+qgisMinimumVersion=3.22
+qgisMaximumVersion=3.99
+version=0.1.0
+author=Daniel Perez
+author_email=daniel.perez@ibero.mx
+about=Corrects GPS drift and anchors routes to road network/OSM for air-quality mobile monitoring.
+tracker=https://github.com/daperezmora/RouteCorrector/issues
+repository=https://plugins.qgis.org/plugins/RouteCorrector/
+homepage=https://github.com/daperezmora/RouteCorrector
+changelog=See CHANGELOG.md
+category=Plugins
+icon=icon.png
+plugin_type=python
+experimental=False
+deprecated=False
+tags=air quality;geolocation;gps drift;qgis;osm
+
+[about]
+RouteCorrector helps correct mobile GPS tracks by setting and reordering anchor points, snapping to OSM, and exporting corrected routes for micro-scale exposure analysis.
