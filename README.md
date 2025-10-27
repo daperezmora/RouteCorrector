@@ -23,11 +23,11 @@ This ensures that every corrected dataset reflects the true spatial context of f
 ## Key Features (Version V1_SemFin_Din)
 
 - **Two correction modes:**  
-  - *Uniform Motion (MRU)* – preserves time intervals between points.  
-  - *Distance-based* – preserves original distances between observations.  
+  - *Uniform Motion (MRU)*: preserves time intervals between points.  
+  - *Distance-based*: preserves original distances between observations.  
 - **Batch correction:** adjust an entire section between anchors in a single step.  
 - **Interactive table tools:** remove unwanted points before or after correction.  
-- **Optimized accuracy:** robust handling of GPS drift and short-distance variability.  
+- **Optimized accuracy:** robust handling of GPS drift and short distance variability.  
 - **Simplified workflow:** minimal configuration, focused on precision and reproducibility.  
 - **Seamless QGIS integration:** runs directly within the QGIS interface, without external libraries or OSM dependencies.
 
@@ -35,12 +35,12 @@ This ensures that every corrected dataset reflects the true spatial context of f
 
 ## Methodological Context
 
-The plugin implements a **parametric correction algorithm** that computes the proportional position of each observation along a selected line segment between two user-defined anchor points.  
+The plugin implements a **parametric correction algorithm** that computes the proportional position of each observation along a selected line segment between two user defined anchor points.  
 Depending on the chosen mode:
 - The MRU mode distributes points evenly based on timestamp progression.  
 - The Distance mode calculates cumulative observed distances to reproduce the actual spacing pattern along the corrected route.
 
-This approach eliminates the need for external map matching (e.g., OpenStreetMap) and maintains the internal consistency of the original dataset.
+This approach eliminates the need for external map matching (e.g. OpenStreetMap) and maintains the internal consistency of the original dataset.
 
 ---
 
@@ -76,10 +76,10 @@ This approach eliminates the need for external map matching (e.g., OpenStreetMap
 
 ## Authors and Contributions
 
-- **Ana Laura Jimenez Chavez¹** – Lead developer and maintainer; implemented correction algorithms and QGIS integration.  
-- **Francisco Esquembre Martinez²** – Conceptual design and mathematical modeling guidance.  
-- **Daniel Alejandro Pérez de la Mora¹** – Interface design, usability testing, and documentation.  
-- **Antonia Baeza Caracena³** – Validation, domain feedback, and critical review.
+- **Ana Laura Jimenez Chavez¹**, Lead developer and maintainer; implemented correction algorithms and QGIS integration.  
+- **Francisco Esquembre Martinez²**, Conceptual design and mathematical modeling guidance.  
+- **Daniel Alejandro Pérez de la Mora¹**, Interface design, usability testing, and documentation.  
+- **Antonia Baeza Caracena³**, Validation, domain feedback, and critical review.
 
 ### Affiliations
 1. Instituto de Investigación Aplicada y Tecnología, Universidad Iberoamericana, 01219 Mexico City, Mexico  
