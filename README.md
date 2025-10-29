@@ -64,13 +64,51 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
 
 ## Usage
 
-1. Load a vector layer containing your GPS-based measurements.  
-2. Open **RouteCorrector** from the **Plugins** menu or toolbar.  
-3. Select start and end **anchor points** to define the correction section.  
-4. Choose the correction mode: *Uniform Motion* or *Distance-based*.  
-5. Click **Correct Section** to realign the points along the reference route.  
-6. Optionally, use the table to remove unwanted points.  
-7. Save or export the corrected layer for further analysis.
+### Input requirements
+- A **point layer** with GPS measurements (e.g., pollutants, timestamp, coordinates).
+- A **reference route** (polyline) representing the intended path.  
+  *You may draw it in QGIS or load it from an existing layer.*
+- Recommended: fields for **timestamp** (for Uniform Motion) and **unique id**.
+
+> CRS: Use a projected CRS (meters) for best distance calculations (e.g., UTM).  
+> Save your project before running corrections.
+
+### Quick start (6 steps)
+
+1. **Load data**
+   - Add your point layer (GPS measurements) and the reference route (polyline) to QGIS.
+   - Ensure the point layer is visible in the Layers panel.
+
+2. **Open the plugin**
+   - Go to **Plugins → RouteCorrector → Open Dialog** (or use the toolbar button).
+
+3. **Select the target layer (work on a copy)**
+   - In the Layers panel, **duplicate your point layer** (Right-click → *Duplicate Layer*) and rename it (e.g., `points_corrected`).
+   - **Select the copied layer** to make it active.
+   - Click the **Toggle Editing** pencil on that copied layer to ensure edits apply to the copy.
+
+4. **Define anchors**
+   - Select the **start** and **end** anchor points (the section you want to correct).
+   - Confirm that the selected segment on the route covers your points of interest.
+
+5. **Choose a correction mode**
+   - **Uniform Motion (MRU):** preserves **temporal progression** (even spacing by time).
+   - **Distance-based:** preserves **observed spacing** between points (by cumulative distance).
+
+6. **Run and export**
+   - Click **Correct Section** to realign points along the reference route.
+   - Review the table and optionally **remove unwanted points**.
+   - **Save your edits** and **toggle editing off** on the copied layer.
+   - Export the corrected result: **Right-click the layer → Export → Save Features As…**
+
+> **Safety tip:** Always correct the **copied** layer (`points_corrected`) to keep your original measurements unchanged.
+
+### Detailed workflow (additions)
+
+- **Prepare layers (safe copy):** Right-click your original points → *Duplicate Layer* → rename (e.g., `points_corrected`). Make sure the **copied layer is active** and **editing is ON** (pencil icon) before running the correction.
+
+- **Export & versioning:** After correction, save edits on `points_corrected`, then export to **GeoPackage (.gpkg)** or **GeoJSON** with a versioned name (e.g., `campaign_2024_points_corrected_v1.gpkg`).
+
 
 ---
 
