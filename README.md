@@ -79,6 +79,8 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - Add your point layer (GPS measurements) and the reference route (polyline) to QGIS.
    - Ensure the point layer is visible in the Layers panel.
 
+![Load layers in QGIS](docs/OriginalLayer.png)
+
 2. **Open the plugin**
    - Go to **Plugins → RouteCorrector → Open Dialog** (or use the toolbar button).
 
@@ -86,22 +88,30 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - In the Layers panel, **duplicate your point layer** (Right-click → *Duplicate Layer*) and rename it (e.g., `points_corrected`).
    - **Select the copied layer** to make it active.
    - Click the **Toggle Editing** pencil on that copied layer to ensure edits apply to the copy.
-     
-   ![Select and edit copy layer](docs/SelectionLayer.png)
+  
+ ![Select the original layer](docs/SelectionLayer.png) 
+ ![Edit copy layer](docs/PointsLayerEraserCreated.png)
    
 5. **Define anchors**
    - Select the **start** and **end** anchor points (the section you want to correct).
    - Confirm that the selected segment on the route covers your points of interest.
+     
+![Define anchors on route](docs/SelectPoint1.png)
+![](docs/SelectPoint2.peng)
 
 6. **Choose a correction mode**
    - **Uniform Motion (MRU):** preserves **temporal progression** (even spacing by time).
    - **Distance-based:** preserves **observed spacing** between points (by cumulative distance).
+
+![Choose mode](docs/CorrectionMode.png)
 
 7. **Run and export**
    - Click **Correct Section** to realign points along the reference route.
    - Review the table and optionally **remove unwanted points**.
    - **Save your edits** and **toggle editing off** on the copied layer.
    - Export the corrected result: **Right-click the layer → Export → Save Features As…**
+
+ ![Corrected layer result](docs/CorrectedData.png)
 
 > **Safety tip:** Always correct the **copied** layer (`points_corrected`) to keep your original measurements unchanged.
 
