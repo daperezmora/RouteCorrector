@@ -87,7 +87,7 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - Go to **Plugins → RouteCorrector → Open Dialog** (or use the toolbar button).
      
 <p align="center">
-  <img src="docs/OpenPlugin.png">
+  <img src="docs/OpenPlugin.png" width="500">
 </p>
 
 3. **Select the target layer (work on a copy)**
