@@ -79,10 +79,16 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - Add your point layer (GPS measurements) and the reference route (polyline) to QGIS.
    - Ensure the point layer is visible in the Layers panel.
 
-![Load layers in QGIS](docs/OriginalLayer.png)
+<p align="center">
+  <img src="docs/OriginalLayer.png" width="300">
+</p>
 
 2. **Open the plugin**
    - Go to **Plugins → RouteCorrector → Open Dialog** (or use the toolbar button).
+     
+<p align="center">
+  <img src="docs/OpenPlugin.png">
+</p>
 
 3. **Select the target layer (work on a copy)**
    - In the Layers panel, **duplicate your point layer** (Right-click → *Duplicate Layer*) and rename it (e.g., `points_corrected`).
@@ -90,22 +96,26 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - Click the **Toggle Editing** pencil on that copied layer to ensure edits apply to the copy.
   
 <p align="center">
-  <img src="docs/SelectionLayer.png" width="300">
+  <img src="docs/SelectionLayer.png">
   <img src="docs/PointsLayerEraserCreated.png" width="300">
 </p>
    
 5. **Define anchors**
    - Select the **start** and **end** anchor points (the section you want to correct).
    - Confirm that the selected segment on the route covers your points of interest.
-     
-![Define anchors on route](docs/SelectPoint1.png)
-![](docs/SelectPoint2.peng)
+
+<p align="center">
+  <img src="docs/SelectPoint1.png">
+   <img src="docs/SelectPoint2.png">
+</p>
 
 6. **Choose a correction mode**
    - **Uniform Motion (MRU):** preserves **temporal progression** (even spacing by time).
    - **Distance-based:** preserves **observed spacing** between points (by cumulative distance).
 
-![Choose mode](docs/CorrectionMode.png)
+<p align="center">
+  <img src="docs/CorrectionMode.png">
+</p>
 
 7. **Run and export**
    - Click **Correct Section** to realign points along the reference route.
@@ -113,7 +123,9 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - **Save your edits** and **toggle editing off** on the copied layer.
    - Export the corrected result: **Right-click the layer → Export → Save Features As…**
 
- ![Corrected layer result](docs/CorrectedData.png)
+<p align="center">
+  <img src="docs/CorrectedData.png" width="300">
+</p>
 
 > **Safety tip:** Always correct the **copied** layer (`points_corrected`) to keep your original measurements unchanged.
 
