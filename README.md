@@ -86,7 +86,8 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - In the Layers panel, **duplicate your point layer** (Right-click → *Duplicate Layer*) and rename it (e.g., `points_corrected`).
    - **Select the copied layer** to make it active.
    - Click the **Toggle Editing** pencil on that copied layer to ensure edits apply to the copy.
-        ![Select and edit copy layer](docs/SelectionLayer.png)
+     
+                                    ![Select and edit copy layer](docs/SelectionLayer.png)
 4. **Define anchors**
    - Select the **start** and **end** anchor points (the section you want to correct).
    - Confirm that the selected segment on the route covers your points of interest.
