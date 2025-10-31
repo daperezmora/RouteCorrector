@@ -87,16 +87,17 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - **Select the copied layer** to make it active.
    - Click the **Toggle Editing** pencil on that copied layer to ensure edits apply to the copy.
      
-                                    ![Select and edit copy layer](docs/SelectionLayer.png)
-4. **Define anchors**
+   ![Select and edit copy layer](docs/SelectionLayer.png)
+   
+5. **Define anchors**
    - Select the **start** and **end** anchor points (the section you want to correct).
    - Confirm that the selected segment on the route covers your points of interest.
 
-5. **Choose a correction mode**
+6. **Choose a correction mode**
    - **Uniform Motion (MRU):** preserves **temporal progression** (even spacing by time).
    - **Distance-based:** preserves **observed spacing** between points (by cumulative distance).
 
-6. **Run and export**
+7. **Run and export**
    - Click **Correct Section** to realign points along the reference route.
    - Review the table and optionally **remove unwanted points**.
    - **Save your edits** and **toggle editing off** on the copied layer.
