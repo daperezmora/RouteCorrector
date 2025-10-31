@@ -89,7 +89,10 @@ This approach eliminates the need for external map matching (e.g. OpenStreetMap)
    - **Select the copied layer** to make it active.
    - Click the **Toggle Editing** pencil on that copied layer to ensure edits apply to the copy.
   
- ![Select the original layer](docs/SelectionLayer.png)  ![Edit copy layer](docs/PointsLayerEraserCreated.png)
+<p align="center">
+  <img src="docs/SelectionLayer.png" width="300">
+  <img src="docs/PointsLayerEraserCreated.png" width="300">
+</p>
    
 5. **Define anchors**
    - Select the **start** and **end** anchor points (the section you want to correct).
