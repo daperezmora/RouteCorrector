@@ -3,9 +3,31 @@
 This document summarizes the manual tests performed before public release.
 
 ## Environment
-- **QGIS version:** 3.34.6-Prizren (Windows), 3.42.1-Münster (macOS)
-- **OS tested:** Windows 11 23H2, macOS 14.5 Sonoma
-- **Python version:** 3.12.11 (Win), 3.11.7 (Mac)
+
+### macOS
+- **QGIS version:** 3.42.1-Münster  
+- **Qt version:** 5.15.2  
+- **Python version:** 3.9.5  
+- **GDAL version:** 3.3.2  
+- **PROJ version:** 8.1.1  
+- **OS version:** macOS (Apple Silicon)  
+
+### Windows
+- **QGIS version:** 3.40.8-Bratislava  
+- **Qt version:** 5.15.13  
+- **Python version:** 3.12.11  
+- **GDAL version:** 3.11.0 — Eganville  
+- **PROJ version:** 9.6.2  
+- **EPSG Registry database version:** v12.013 (2025-05-26)  
+- **GEOS version:** 3.13.1-CAPI-1.19.2  
+- **SQLite version:** 3.46.1  
+- **PDAL version:** 2.9.0  
+- **OS version:** Windows 11  
+
+### Notes
+The plugin was successfully tested on both macOS and Windows environments with consistent behavior across QGIS 3.4x and 3.42 series.  
+All corrections and exports performed as expected under both Python 3.9 and 3.12 environments.
+
 
 ---
 
