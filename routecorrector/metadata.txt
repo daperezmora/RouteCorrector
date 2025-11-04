@@ -28,5 +28,5 @@ deprecated=False
 server=False
 
 license=GPL-3.0-or-later
-license_file=LICENSE.txt
+license_file=LICENSE
 
