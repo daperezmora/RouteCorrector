@@ -4,7 +4,7 @@ qgisMinimumVersion=3.22
 description=Corrects GPS drift and realigns mobile environmental sensor data along user-defined routes.
 version=1.0
 author=Ana Laura Jiménez Chávez (InIAT, Universidad Iberoamericana)
-email=analaura.jimenez.ch@gmail.com
+email=analaura.jimenez.ch@gmail.com; daniel.perez@ibero.mx
 
 about=RouteCorrector is a QGIS plugin designed to correct GPS drift and spatial dispersion in mobile environmental monitoring datasets. It allows users to realign scattered measurement points (e.g., air quality, noise, or particulate matter) along predefined reference routes, ensuring that sensor data accurately follow real-world paths. The plugin includes two correction modes — Uniform Motion (MRU) and Distance-based — and provides an intuitive interface for researchers working on urban exposure assessment and environmental studies.
 
