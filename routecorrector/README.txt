@@ -1,32 +1,52 @@
-Plugin Builder Results
+RouteCorrector – QGIS Plugin
+Version: 1.0
+Author: Ana Laura Jiménez Chávez (InIAT, Universidad Iberoamericana)
 
-Your plugin RouteCorrector was created in:
-    C:\Users\arual\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\route_corrector
+---
 
-Your QGIS plugin directory is located at:
-    C:/Users/arual/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins
+RouteCorrector is a QGIS plugin designed to correct GPS drift and spatial dispersion
+in mobile environmental monitoring data. It allows users to realign scattered
+measurement points (e.g., air quality, noise, or particulate matter) along user-defined
+reference routes, ensuring that mobile sensor data accurately follow real-world paths.
 
-What's Next:
+Key features:
+- Define start and end anchor points for correction.
+- Apply two correction modes:
+  • Uniform Motion (MRU): preserves time progression between points.
+  • Distance-based: preserves original spacing between consecutive points.
+- Visual and interactive interface fully integrated in QGIS.
+- Export corrected data layers for further spatial or temporal analysis.
 
-  * Copy the entire directory containing your new plugin to the QGIS plugin
-    directory
+---
 
-  * Compile the resources file using pyrcc5
+Installation:
+1. Copy the “route_corrector” folder to your local QGIS plugins directory:
+   • Windows: C:\Users\<user>\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\
+   • macOS: ~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/
 
-  * Run the tests (``make test``)
+2. Open QGIS → go to “Plugins → Manage and Install Plugins → Installed”
+   and enable **RouteCorrector**.
 
-  * Test the plugin by enabling it in the QGIS plugin manager
+3. The plugin will appear in the toolbar and under “Plugins → RouteCorrector”.
 
-  * Customize it by editing the implementation file: ``route_corrector.py``
+---
 
-  * Create your own custom icon, replacing the default icon.png
+Usage summary:
+1. Load a point layer with your GPS data.
+2. Create or load a reference route (line layer).
+3. Define anchor points (start and end).
+4. Choose correction mode: *Uniform Motion* or *Distance-based*.
+5. Click “Correct Section” to realign the data.
+6. Export the corrected layer if needed.
 
-  * Modify your user interface by opening RouteCorrector_dialog_base.ui in Qt Designer
+---
 
-  * You can use the Makefile to compile your Ui and resource files when
-    you make changes. This requires GNU make (gmake)
+Credits:
+Developed collaboratively by:
+- Ana Laura Jiménez Chávez (InIAT, Universidad Iberoamericana)
+- Francisco Esquembre Martínez (University of Murcia)
+- Daniel Alejandro Pérez de la Mora (Universidad Iberoamericana)
+- Antonia Baeza Caracena (University of Murcia)
 
-For more information, see the PyQGIS Developer Cookbook at:
-http://www.qgis.org/pyqgis-cookbook/index.html
-
-(C) 2011-2018 GeoApt LLC - geoapt.com
+License: GPL v3 or later
+Contact: analaura.jimenez.ch@gmail.com; daniel.perez@ibero.mx
