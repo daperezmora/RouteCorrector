@@ -1,47 +1,29 @@
-# This file contains metadata for your plugin.
-
-# This file should be included when you package your plugin.# Mandatory items:
-
 [general]
-name=Route Corrector
-qgisMinimumVersion=3.0
-description=Adjusts moving points to user-defined routes
-version=0.1
-author=Ana Laura Jiménez Chávez_InIAT
+name=RouteCorrector
+qgisMinimumVersion=3.22
+description=Corrects GPS drift and realigns mobile environmental sensor data along user-defined routes.
+version=1.0
+author=Ana Laura Jiménez Chávez (InIAT, Universidad Iberoamericana)
 email=analaura.jimenez.ch@gmail.com
 
-about=This plugin corrects mobile environmental sensor data (e.g., pollutants, particles, noise) by adjusting scattered GPS points to user-defined routes (straight lines, curves, or L-shaped paths). Users can load CSV files with coordinates, timestamps, and measurement values (e.g., PM2.5, CO2, ozone), then interactively draw reference routes to snap data points onto the correct path using parametric equations. Ideal for air/water/noise quality studies with mobile devices.
+about=RouteCorrector is a QGIS plugin designed to correct GPS drift and spatial dispersion in mobile environmental monitoring datasets. It allows users to realign scattered measurement points (e.g., air quality, noise, or particulate matter) along predefined reference routes, ensuring that sensor data accurately follow real-world paths. The plugin includes two correction modes — Uniform Motion (MRU) and Distance-based — and provides an intuitive interface for researchers working on urban exposure assessment and environmental studies.
 
-tracker=http://bugs
-repository=http://repo
-# End of mandatory metadata
+tracker=https://github.com/daperezmora/RouteCorrector/issues
+repository=https://github.com/daperezmora/RouteCorrector
 
-# Recommended items:
-
+# Recommended items
 hasProcessingProvider=no
-# Uncomment the following line and add your changelog:
-# changelog=
+changelog=Initial public release (v1.0) — stable version supporting MRU and distance-based correction modes.
 
-# Tags are comma separated with spaces allowed
-tags=python
-
-homepage=http://homepage
-category=Plugins
+tags=QGIS, GPS correction, air quality, mobility, environmental monitoring, RouteCorrector, plugin
+homepage=https://github.com/daperezmora/RouteCorrector
+category=Vector
 icon=icon.png
-# experimental flag
-experimental=True
 
-# deprecated flag (applies to the whole plugin, not just a single version)
+# Experimental and deprecated flags
+experimental=False
 deprecated=False
 
-# Since QGIS 3.8, a comma separated list of plugins to be installed
-# (or upgraded) can be specified.
-# Check the documentation for more information.
-# plugin_dependencies=
-
-Category of the plugin: Raster, Vector, Database or Web
-# category=
-
-# If the plugin can run on QGIS Server.
+# Plugin compatibility
 server=False
 
