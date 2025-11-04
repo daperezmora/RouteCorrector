@@ -20,7 +20,7 @@ This ensures that every corrected dataset reflects the true spatial context of f
 
 ---
 
-## Key Features (Version V1_SemFin_Din)
+## Key Features ( RouteCorrector_V1.0 )
 
 - **Two correction modes:**  
   - *Uniform Motion (MRU)*: preserves time intervals between points.  
