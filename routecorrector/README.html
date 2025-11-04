@@ -1,42 +1,61 @@
 <html>
-<body>
-<h3>Plugin Builder Results</h3>
+  <body style="font-family: Arial, sans-serif; margin: 20px;">
+    <h2>RouteCorrector – QGIS Plugin</h2>
 
-Congratulations! You just built a plugin for QGIS!<br/><br />
+    <p>
+      <b>Version:</b> 1.0<br>
+      <b>Author:</b> Ana Laura Jiménez Chávez (InIAT, Universidad Iberoamericana)<br>
+      <b>License:</b> GPL v3 or later
+    </p>
 
-<div id='help' style='font-size:.9em;'>
-Your plugin <b>RouteCorrector</b> was created in:<br>
-&nbsp;&nbsp;<b>C:\Users\arual\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\route_corrector</b>
-<p>
-Your QGIS plugin directory is located at:<br>
-&nbsp;&nbsp;<b>C:/Users/arual/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins</b>
-<p>
-<h3>What's Next</h3>
-<ol>
-    <li>If resources.py is not present in your plugin directory, compile the resources file using pyrcc5 (simply use <b>pb_tool</b> or <b>make</b> if you have automake)
-    <li>Optionally, test the generated sources using <b>make test</b> (or run tests from your IDE)
-    <li>Copy the entire directory containing your new plugin to the QGIS plugin directory (see Notes below)
-    <li>Test the plugin by enabling it in the QGIS plugin manager
-    <li>Customize it by editing the implementation file <b>route_corrector.py</b>
-    <li>Create your own custom icon, replacing the default <b>icon.png</b>
-    <li>Modify your user interface by opening <b>route_corrector_dialog_base.ui</b> in Qt Designer
-</ol>
-Notes:
-<ul>
-    <li>You can use <b>pb_tool</b> to compile, deploy, and manage your plugin. Tweak the <i>pb_tool.cfg</i> file included with your plugin as you add files. Install <b>pb_tool</b> using 
-        <i>pip</i> or <i>easy_install</i>. See <b>http://loc8.cc/pb_tool</b> for more information.
-    <li>You can also use the <b>Makefile</b> to compile and deploy when you
-        make changes. This requires GNU make (gmake). The Makefile is ready to use, however you 
-        will have to edit it to add addional Python source files, dialogs, and translations.
-</ul>
-</div>
-<div style='font-size:.9em;'>
-<p>
-For information on writing PyQGIS code, see <b>http://loc8.cc/pyqgis_resources</b> for a list of resources.
-</p>
-</div>
-<p>
-&copy;2011-2019 GeoApt LLC - geoapt.com 
-</p>
-</body>
+    <h3>Overview</h3>
+    <p>
+      RouteCorrector is a QGIS plugin designed to correct GPS drift and spatial
+      dispersion in mobile environmental monitoring data. It allows users to
+      realign scattered measurement points (e.g., air quality, noise, or
+      particulate matter) along user-defined reference routes, ensuring that
+      mobile sensor data accurately follow real-world paths.
+    </p>
+
+    <h3>Main Features</h3>
+    <ul>
+      <li>Define start and end anchor points for correction.</li>
+      <li>Apply two correction modes:
+        <ul>
+          <li><b>Uniform Motion (MRU):</b> preserves temporal progression.</li>
+          <li><b>Distance-based:</b> preserves original spatial distances.</li>
+        </ul>
+      </li>
+      <li>Interactive interface fully integrated in QGIS.</li>
+      <li>Export corrected data for further analysis.</li>
+    </ul>
+
+    <h3>Usage Summary</h3>
+    <ol>
+      <li>Load a point layer with your GPS-based measurements.</li>
+      <li>Create or load a reference route (line layer).</li>
+      <li>Select the start and end anchor points.</li>
+      <li>Choose a correction mode: <i>Uniform Motion</i> or <i>Distance-based</i>.</li>
+      <li>Click <b>Correct Section</b> to realign the data points.</li>
+      <li>Optionally export the corrected layer.</li>
+    </ol>
+
+    <h3>Credits</h3>
+    <p>
+      Developed collaboratively by:<br>
+      Ana Laura Jiménez Chávez (InIAT, Universidad Iberoamericana)<br>
+      Francisco Esquembre Martínez (University of Murcia)<br>
+      Daniel Alejandro Pérez de la Mora (Universidad Iberoamericana)<br>
+      Antonia Baeza Caracena (University of Murcia)
+    </p>
+
+    <h3>Contact</h3>
+    <p>
+      📧 <a href="mailto:analaura.jimenez.ch@gmail.com">analaura.jimenez.ch@gmail.com</a>
+    </p>
+
+    <p style="font-size: 0.9em; color: gray;">
+      RouteCorrector © 2025 – Distributed under the GNU General Public License (GPL v3 or later)
+    </p>
+  </body>
 </html>
